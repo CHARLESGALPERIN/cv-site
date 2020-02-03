@@ -1,0 +1,239 @@
+/* - font style copy pasta -
+font-family: 'Righteous', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Teko', sans-serif;
+*/
+body{
+    text-align: center;
+    background-color: black;
+    background-image: url(https://i.ya-webdesign.com/images/honeycomb-grid-png-4.png);
+    background-size: 110%;
+    background-position: center;
+}
+.bg-overlay{
+    /* This adjusts the area of the effect */
+    width:              100%;
+    height:             100%;
+    /* The effect is a directional linear gradient using 5 colors*/
+    background: linear-gradient(
+        to bottom,
+    rgba(0, 0, 0,.5), 
+    rgb(0, 102, 150),
+    rgba(0, 0, 0,1), 
+    rgba(255, 0, 255,.5),
+    rgba(0, 0, 0,.5)
+    );
+    /* Is supposed to repeat the effect, but not sure it even works like this */
+    /* background-repeat: repeat; */
+    /* This adds transparancy to the gradient instead of it painting over completely what is underneath. */
+    opacity:            .7;
+    /* This forces the effect to appear & start specifically where it is placed.
+    /* It will also bleed into other sections based off the declared width and height. */
+    position:           absolute;
+    
+    /* this allows the effect to travel with scroll */
+    /*position:           fixed;*/
+    z-index:            -1;
+}
+/* This is an overly complicated pattern of overlapping gradients to form a patterned background */
+/* .bg-overlay-2(a,b,c,d) are the parts of end effect */
+.bg-overlay2-a {
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    position: absolute;
+    z-index: -1;
+    background: 
+      repeating-linear-gradient(
+        45deg,
+        black,
+        black 50px,
+        blue,
+        blue 1px,
+        red 52px /* determines size */
+      );
+  }
+  .bg-overlay2-b {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+    background: 
+      repeating-linear-gradient(
+        -45deg,
+        black,
+        black 50px,
+        blue,
+        blue 1px,
+        red 52px /* determines size */
+      );
+  }
+  .bg-overlay2-c {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+    background: 
+      repeating-linear-gradient(
+        0deg,
+        black,
+        black 50px,
+        blue,
+        blue 1px,
+        red 52px /* determines size */
+      );
+  }
+  .bg-overlay2-d {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    position: absolute;
+    z-index: -1;
+    background: 
+      repeating-linear-gradient(
+        90deg,
+        black,
+        black 50px,
+        blue,
+        blue 1px,
+        red 52px /* determines size */
+      );
+  }
+/* Basic Elements of the page */
+.avatar {
+    z-index:        1;
+    width:          30%;
+    margin-top:     2.5%;
+}
+.myname {
+    z-index:        1;
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size:      50px;
+    font-weight:    bold;
+    text-transform: uppercase;
+    margin-bottom:  20px;
+    margin-top:     20px;
+    word-spacing:   25px;
+}
+.myhead{
+    z-index:        1;
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size:      25pt;
+    margin-left:    15%;
+    margin-right:   15%;
+    margin-bottom:  20px;
+}
+.mysubtext{
+    z-index:        1;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size:      18pt;
+    margin-left:    15%;
+    margin-right:   15%;
+    margin-bottom:  50px;
+}
+.section-row {
+  padding-bottom: 200px;
+}
+.section-row-photo {
+  padding-bottom: 50px;
+}
+.phead {
+    z-index:        1;
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size:      30pt;
+    font-weight:    bold;
+    text-transform: uppercase;
+    margin-left:    20%;
+    margin-right:   20%;
+    margin-bottom:  50px;
+}
+.psub {
+    text-align: left;
+    z-index:        1;
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size:      20pt;
+    margin-left:    20%;
+    margin-right:   20%;
+    margin-bottom:  5px;
+}
+.ptext {
+    text-align: left;
+    z-index:        1;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size:      12pt;
+    margin-left:    27%;
+    margin-right:   20%;
+}
+img {
+    z-index:        1;
+    width:          15%;
+    border-radius:  100%;
+}
+.section-images {
+  float: left;
+  margin-right: 2%;
+  margin-left: 10%;
+}
+.carousel-box {
+  margin-bottom:  0px;
+}
+.carousel-control-prev{
+  margin-left: 10%;
+}
+.carousel-control-next{
+  margin-right: 10%;
+}
+.carousel-inner {
+  margin-top: 100px;
+}
+.carousel-images {
+  padding-bottom: 0px;
+  width: 50%;
+  border-radius: 100px 10px 100px 10px;
+  box-shadow: 0 0px 50px 0 rgba(0, 102, 150, .5), 0 0px 20px 0 rgba(255, 0, 255, .5);
+  border: 10px;
+  border-color: white;
+}
+.carousel-item {
+  padding: 21px;
+}
+.cbg {
+  width: auto;
+}
+.divider {
+    height: 30px;
+    width: 80%;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    background: linear-gradient(
+        to top,
+    rgba(0, 102, 150,.2),
+    rgba(255, 0, 255,.2)
+    );
+}
+.site-container {
+  position: relative;
+  min-height: 100vh;
+}
+.site-wrap {
+  padding-bottom: 148px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
